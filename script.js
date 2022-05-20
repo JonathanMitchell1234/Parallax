@@ -7,8 +7,6 @@ function updatemenu() {
 	}
 }
 
-
-
 function captchaCode() {
 	var Numb1, Numb2, Numb3, Numb4, Code;
 	Numb1 = (Math.ceil(Math.random() * 10) - 1).toString();

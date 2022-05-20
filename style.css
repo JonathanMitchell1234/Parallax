@@ -3,7 +3,6 @@
 	color: #fff;
 	height: 30px;
 	padding-left: 12px;
-	border-radius: 10px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,8 +103,8 @@
 
 @media screen and (max-width: 800px) {
 	#menu {
-		position: relative;
-		background-color: rgba(0, 0, 0, 0.247);
+		/* position: relative; */
+		background-color: rgba(0, 0, 0, 0.43);
 	}
 
 	#menu ul {
@@ -162,7 +161,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.662);
 }
 
 .bg-video-wrap {
@@ -210,7 +209,7 @@ html {
 	height: 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
-	color: rgb(69, 69, 69);
+	color: rgba(0, 0, 0, 0.123);
 }
 
 .bgimg-1,
@@ -264,7 +263,7 @@ h3 {
 }
 
 .button1 {
-	width: 150px;
+	width: 250px;
 	height: 50px;
 	border-radius: 50em;
 	background-color: #11a182;
@@ -272,11 +271,33 @@ h3 {
 	border: 1px solid;
 	border-color: rgb(254, 252, 252);
 	font-family: "Lato", sans-serif;
+    font-weight: bolder;
+    transition: all 0.5s;
 }
 
-.button1:hover {
-	background-color: #073c31;
-    cursor: pointer;
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .donatebutton {
@@ -285,93 +306,114 @@ h3 {
 	top: 70vh;
 }
 
-
-
 #contact {
-  overflow: auto;
+	overflow: hidden;
 }
+
 #contact #form {
-  width:410px;
-  float:left;
+	width: 410px;
+	float: left;
 }
+
 #contact #form h2 {
-  font: 48px 'Bree Serif', Georgia, serif;
+	font: 48px "Bree Serif", Georgia, serif;
 }
+
 #contact #form span {
-  display:block;
-  float:left;
-  width:100px;
-  padding-top:5px;
-  font: 14px/16px'Bree Serif', Georgia, serif;
+	display: block;
+	float: left;
+	width: 100px;
+	padding-top: 5px;
+	font: 14px/16px "Bree Serif", Georgia, serif;
 }
+
 #contact #form input {
-  float:left;
-  width:255px;
-  border:0px;
-  color:#F1F1F1;
-  padding:10px 10px 10px 30px;
-  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
-  margin-bottom:10px;
+	float: left;
+	width: 100%;
+	border: 0px;
+	color: #f1f1f1;
+	padding: 10px 10px 10px 30px;
+	font: 11px/20px "Open Sans", Verdana, Helvetica, sans-serif;
+	margin-bottom: 10px;
 }
+
 #contact #form textarea {
-  float:left;
-  border:0px;
-  width:255px;
-  height:140px;
-  padding:10px 10px 10px 30px;
-  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
-  color:#F1F1F1;
-  resize: none;
+	float: left;
+	border: 0px;
+	width: 100%;
+	height: 140px;
+	padding: 10px 10px 10px 30px;
+	font: 11px/20px "Open Sans", Verdana, Helvetica, sans-serif;
+	color: #f1f1f1;
+	resize: none;
 }
+
 #contact #form input.name {
-  background:#222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+	background: #222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
 }
+
 #contact #form input.email {
-  background:#222222 url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+	background: #222222 url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
 }
+
 #contact #form input.captcha {
-  background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat 10px 8px;
+	background: #222222 url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat 10px 8px;
 }
+
 #contact #form textarea.message {
-  background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+	background: #222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
 }
+
 #contact #form input.submit {
-  cursor: pointer;
-  width:85px;
-  height:30px;
-  float:right;
-  padding:0px 0px 5px 0px;
-  margin:10px 16px 0px 0px;
-  background:#222222;
-  color:#F1F1F1;
-  font: 14px/16px'Bree Serif', Georgia, serif;
+	cursor: pointer;
+	width: 85px;
+	height: 30px;
+	float: right;
+	padding: 0px 0px 5px 0px;
+	margin: 10px 16px 0px 0px;
+	background: #222222;
+	color: #f1f1f1;
+	font: 14px/16px "Bree Serif", Georgia, serif;
 }
-#contact #captcha span{
-  width: 44px;
+
+#contact #captcha span {
+	width: 44px;
 }
-#contact #captcha input{
-  background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
-  margin: 5px 0 0;
-  padding: 0;
-  border: medium none;
-  cursor: pointer;
-  width: 15px;
+
+#contact #captcha input {
+	background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+	margin: 5px 0 0;
+	padding: 0;
+	border: medium none;
+	cursor: pointer;
+	width: 15px;
 }
 
 .contactme {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    bottom: 100px;
-    width: 100%;
-    
+	display: flex;
+    flex: auto;
+	position: relative;
+	justify-content: center;
+	bottom: 200px;
+	width: 100%;
 }
 
 .socials {
-    color: white;
-    font-size: 70px;
-    text-align: center;
-   
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px;
 
 }
 
+.fa-facebook-square {
+	padding-right: 30px;
+}
+
+.fa-instagram {
+	padding-right: 30px;
+}
+
+.fa-github-square {
+	padding-right: 30px;
+}
