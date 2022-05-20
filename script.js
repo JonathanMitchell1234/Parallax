@@ -76,7 +76,7 @@ $(function () {
 		}
 		if (captchaVal == captchaCode && emailFilter.test(emailText) && nameFilter.test(nameText) && messageText > 50) {
 			$("#contactForm").css("display", "none");
-			$("#form").append("<h2>Message sent!</h2>");
+			$("#form").append("<h2>This is a mockup! Why are you sending messages :)</h2>");
 			return false;
 		}
 	});
