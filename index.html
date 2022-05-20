@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/f9fb5b08cd.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name="description" content="This is a mockup landing page for a Cat Rescue">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="author" content="Jonathan Mitchell">
     <title>Jasper's House</title>
 </head>
@@ -27,7 +28,7 @@
             <li><a href="http://">Contact Us</a></li>
             <li><a href="http://">Donate</a></li>
         </ul>
-        
+
     </nav>
     <!-- Start Hero Section -->
     <div class="bg-video-wrap">
@@ -52,20 +53,26 @@
     <div class="caption2"
         style="color: rgb(7, 7, 7); background-color: rgb(183, 179, 179); text-align: center; padding: 50px 80px; text-align: justify">
         <h3 style="text-align: center">We believe in humane shelter standards...</h3>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita deleniti voluptatem magnam
-            tempore dicta sapiente
-            molestias rem nulla nisi aspernatur, hic ab nostrum, recusandae velit minima est facilis cum?
-        </p>
+        <div data-aos="fade-left">
+            <p class="flyin-left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita deleniti voluptatem magnam
+                tempore dicta sapiente
+                molestias rem nulla nisi aspernatur, hic ab nostrum, recusandae velit minima est facilis cum?
+            </p>
+        </div>
     </div>
     <div class="bgimg-2">
         <div class="caption">
-            <span class="border" style="background-color: transparent; font-size: 50px; color: #f7f7f7b8; font-weight: bolder;">Adopt, don't
-                shop!
-            </span>
+            <div data-aos="fade-right">
+                <span class="border"
+                    style="background-color: transparent; font-size: 50px; color: #f7f7f7b8; font-weight: bolder;">Adopt,
+                    don't
+                    shop!
+                </span>
+            </div>
         </div>
     </div>
-    
+
     <div style="position: relative">
         <div
             style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
@@ -75,14 +82,20 @@
                 fugit!
             </p>
             <section class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CC_o1tmduiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CC_o1tmduiU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
         </div>
     </div>
     <div class="bgimg-3">
         <div class="caption">
-            <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">$0 Adoption Fees
-                through 11/27/2022</span>
+            <div data-aos="fade-left">
+                <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7">$0 Adoption
+                    Fees
+                    through 11/27/2022</span>
+            </div>
         </div>
     </div>
     <div style="position: relative">
@@ -130,8 +143,10 @@
         <i class="fa-brands fa-linkedin"></i>
     </div>
 
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
