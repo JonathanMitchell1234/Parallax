@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +12,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +26,28 @@
     <meta name="author" content="Jonathan Mitchell">
     <title>Jasper's House</title>
 </head>
+<!-- Preloader -->
+<div class="loaderWrapper">
+    <div class="loading-cat">
+        <div class="cat-body"></div>
+        <div class="cat-animation-mask"></div>
+        <div class="cat-head">
+            <div class="cat-face"></div>
+            <div class="cat-ear"></div>
+            <div class="cat-hand"></div>
+            <div class="cat-eye"></div>
+            <div class="cat-eye-light"></div>
+            <div class="cat-mouth"></div>
+            <div class="cat-beard left"></div>
+            <div class="cat-beard right"></div>
+        </div>
+        <div class="cat-foot">
+            <div class="cat-belly"></div>
+            <div class="cat-leg"></div>
+            <div class="cat-tail"></div>
+        </div>
+    </div>
+</div>
 
 <body>
     <!-- Navigation -->
@@ -39,7 +63,7 @@
     </nav>
     <!-- Start Hero Section -->
     <div class="bg-video-wrap">
-        <video src="Silver_Cat_02_Videvo.mov" loop muted autoplay playsinline></video>
+        <video id="video_background" src="Silver_Cat_02_Videvo.mov" loop muted autoplay playsinline></video>
         <div class="overlay"></div>
         <div>
             <h1>Jasper's House</h1>
@@ -51,18 +75,18 @@
     <div class="bgimg-1">
         <div class="caption">
             <div data-aos="fade-right">
-            <span class="border">
-                Help us buy food, litter, and medical care!<br />
-        </div>
+                <span class="border">
+                    Help us buy food, litter, and medical care!<br />
+            </div>
         </div>
         <div data-aos="fade-left">
-        <div class="donatebutton">
-            <button class="button1"><span>Donate</span></button>
-        </div>
+            <div class="donatebutton">
+                <button class="button1"><span>Donate</span></button>
+            </div>
         </div>
     </div>
     <div class="caption2"
-        style="color: rgb(7, 7, 7); background-color: rgb(183, 179, 179); text-align: center; padding: 50px 80px; text-align: justify">
+        style="color: rgb(7, 7, 7); background-color: rgb(183, 179, 179); text-align: center; padding: 50px 80px; text-align: justify;">
         <h3 style="text-align: center">We believe in humane shelter standards...</h3>
         <div data-aos="fade-left">
             <p class="flyin-left">
@@ -76,7 +100,7 @@
         <div class="caption">
             <div data-aos="fade-right">
                 <span class="border"
-                    style="background-color: transparent; font-size: 50px; color: #f7f7f7b8; font-weight: bolder;">Adopt,
+                    style="background-color: transparent; font-size: 25px; color: #f7f7f7b8; font-weight: bolder;">Adopt,
                     don't
                     shop!
                 </span>
@@ -88,12 +112,13 @@
         <div
             style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
             <div data-aos="fade-left">
-            <p>
-                
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aperiam distinctio obcaecati
-                similique, et esse quae magnam ad alias odio rem harum ullam aut corporis quos doloribus magni ratione
-                fugit!
-            </p>
+                <p>
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aperiam distinctio obcaecati
+                    similique, et esse quae magnam ad alias odio rem harum ullam aut corporis quos doloribus magni
+                    ratione
+                    fugit!
+                </p>
             </div>
             <section class="youtube">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/CC_o1tmduiU"
@@ -116,11 +141,11 @@
         <div
             style="color: #ddd; background-color: #282e34; text-align: center; padding: 50px 80px; text-align: justify">
             <p>
-                <div data-aos="fade-right">
+            <div data-aos="fade-right">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos architecto, quo repudiandae
                 consectetur sapiente facilis. Illum nostrum, vel explicabo distinctio voluptates non assumenda animi
                 inventore aliquam ex amet sed.
-                </div>
+            </div>
             </p>
         </div>
     </div>
