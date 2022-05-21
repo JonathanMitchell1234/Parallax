@@ -283,7 +283,7 @@ h3 {
 }
 
 .button1 span:after {
-	content: "\00bb";
+	content: "\1F408";
 	position: absolute;
 	opacity: 0;
 	top: 0;
@@ -374,6 +374,11 @@ h3 {
 	background: #222222;
 	color: #f1f1f1;
 	font: 14px/16px "Bree Serif", Georgia, serif;
+}
+
+.submit {
+
+	margin-right: 170px !important;
 }
 
 #contact #captcha span {
