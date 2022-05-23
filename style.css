@@ -651,6 +651,8 @@ h1 {
 	height: 50px;
 	font-size: 75px;
 	font-family:'Slackey', cursive;
+    text-shadow: 5px 2px 2px #267866;
+    
 }
 
 body,
@@ -887,4 +889,21 @@ h3 {
 
 .fa-github-square {
 	padding-right: 30px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+  
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+   { 
+    .donatebutton {
+        top: 80vh;
+    }
+
 }
